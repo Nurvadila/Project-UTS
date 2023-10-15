@@ -1,0 +1,97 @@
+header {
+    background-color: #87CEEB;
+    color: #070707;
+    text-align: left;
+    padding: 10px;
+    position: fixed;
+    width: 99%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+    padding: 0;
+}
+/* CSS untuk konten di bawah header */
+#content {
+    background-color: #4682B4; /* Ganti kode warna dengan warna biru (contoh) */
+    padding: 100px 20px 20px 20px;
+    margin: 0 auto;
+    width: 99%;
+    text-align: center;
+}
+
+.nav {
+    position: absolute;
+    top: 20;
+    right: 10px;
+    margin-right: 30px;
+}
+
+.nav a {
+    margin-left: 20px;
+    text-decoration: double;
+    color: #B22222;
+}
+/* Media query untuk tampilan responsif */
+@media (max-width: 768px) {
+    .nav ul {
+        display: none;
+    }
+}
+
+
+
+.jadwal1{
+    color: black;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+.biodata{
+    background-color: #93c5d6;
+    color: black;
+    padding-top: 100px;
+    padding-bottom: 25px;
+    border-radius: 60px;
+    font-size: large;
+}
+nav{
+    background-color: #c6d4e1;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px;
+    margin-bottom: 50px;
+}
+nav ul{
+    list-style: none;
+    padding: 0px 20px;
+    position: relative;
+    display: inline-table;
+}
+.navigasi ul{
+    list-style: none;
+    background-color: #44749d;
+    padding: 0px 25px;
+    position: relative;
+    display: inline-table;
+    border-radius: 50px;
+}
+.navigasi ul li{
+    float: left;
+}
+.navigasi ul li:hover{
+    background-color:  #c6d4e1;
+}
+.navigasi ul li a:hover{
+    color: #44749d;
+}
+.navigasi ul li a{
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    color: #c6d4e1;
+    font-size: 14pt;
+}

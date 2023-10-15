@@ -1,0 +1,256 @@
+header h1 {
+    margin: 0;
+    padding: 0;
+    background-color: #87CEEB;
+    height: 50px;
+}
+/* CSS untuk konten di bawah header */
+#content {
+    background-color: #4682B4; /* Ganti kode warna dengan warna biru (contoh) */
+    padding: 100px 20px 20px 20px;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+}
+
+.nav {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    margin-right: 30px;
+}
+
+.nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #B22222;
+    font-size: medium;
+}
+
+
+
+*{
+    margin: 0 ;
+    padding: 0;
+}
+.container{
+    position: relative;
+    text-align: center;
+    top: 50%;
+    color: cornflowerblue;
+    height: 700px;
+}
+.container .header{
+    min-height: 100px;
+    background-color: "#8FBC8F";
+    text-transform: uppercase;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.container .navigasi{
+    height: 50px;
+    background-color: rgb(253, 218, 185);
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    text-transform: uppercase;
+    align-items: center;
+    
+}
+.container .content{
+    grid-area: content;
+    background-color: rgb(85, 53, 11);
+    display: flex;
+    height: 500px;
+    display: grid;
+    grid-template-areas: 'cel1 cel2 cel3';
+}
+.container .content .cel1{
+    background-color: rgb(97, 61, 17);
+    grid-area: cel1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.content .cel1 .left1{
+    background-color: rgb(254, 228, 181);
+    width: 70%;
+    height: 80px;
+}
+.content .cel1 .left2{
+    width: 70%;
+    background-color: rgb(153, 66, 34);
+    height: 80px;
+    text-align: center;
+}
+.content .cel1 .left3{
+    width: 70%;
+    background-color: rgb(216, 203, 22);
+    height: 80px;
+    text-align: center;
+}
+.container .content .cel2{
+    background-color: darksalmon;
+    grid-area: cel2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.content .cel2 .center1{
+    background-color: darkred;
+    width: 70%;
+    height: 80px;
+}
+.content .cel2 .center2{
+    width: 80%;
+    background-color: indianred;
+    height: 80px;
+    text-align: center;
+}
+.content .cel2 .center3{
+    width: 90%;
+    background-color: gray;
+    height: 80px;
+    text-align: center;
+}
+.container .content .cel3{
+    background-color: rgb(216, 216, 25);
+    grid-area: cel3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.content .cel3 .right1{
+    width: 70%;
+    background-color: rgb(206, 127, 23);
+    height: 80px;
+    text-align: center;
+}
+.content .cel3 .right2{
+    width: 70%;
+    background-color: aquamarine;
+    height: 80px;
+    text-align: center;
+}
+.container .footer{
+    background-color: rgb(100, 149, 237);
+    height: 75px;
+    color: aliceblue;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    text-transform: uppercase;
+    align-items: center;
+}
+.zoomable.zoomed{
+    transform: scale(1.2);
+    transition: transform 0.5s ease;
+}
+.zoomable-clickable{
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    cursor: pointer;
+}
+.zoomed{
+    transform: scale(1.2);
+}
+.clicked{
+    background-color: brown;
+}
+.zoomable-clickable{
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    cursor: pointer;
+}
+.zoomed{
+    transform: scale(1.2);
+}
+.clicked{
+    background-color: "#90EE90";
+}
+
+.clickable{
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.rotated{
+    transform: rotate(360deg);
+    background-color: "#66CDAA";
+}
+
+.clickable{
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+.center2.rotating{
+    animation: rotate 1s linear forwards;
+    background-color: "#FFA500";
+}
+@keyframes rotate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.clickable{
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+.center3.rotating{
+    animation: rotate 1s linear forwards;
+    background-color: "#9ACD32";
+}
+@keyframes rotate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.clickable{
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.right1.flying{
+    animation: flyUp 1s linear forwards;
+}
+@keyframes flyUp {
+    0%{
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(-200px);
+        opacity: 0;
+    }
+}
+
+.right2{
+    transition: transform 1s ease, transform-origin 1s ease, scaleX 1s ease;
+    transform-origin: right;
+}
+
+.nav{
+    transform: rotateX(0);
+    transition: transform 1s ease;
+    transform-origin: top;
+}
+.open{
+    transform: rotateX(-180deg);
+}
+.closed{
+    transform: rotateX(0);
+}
+
+.footer{
+    transition: transform 1s ease, transform-origin 1s ease, scaleY 1s ease;
+    transform-origin: bottom;
+}
